@@ -191,7 +191,7 @@ header .navbar {
 
 /* about me */
 #about h3 {
-    color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 #about .image img {
@@ -223,7 +223,7 @@ header .navbar {
 
 #about ul li::before {
     content: "▹";
-    color: var(--primary-color);
+    color: var(--secondary-color);
     position: absolute;
     left: 0px;
 }
@@ -237,7 +237,7 @@ header .navbar {
 #about a {
     display: inline-block;
     text-decoration: none;
-    color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 #about a::after {

@@ -1,6 +1,9 @@
 <footer>
+    {{ $posts := (where .Site.RegularPages "Type" "blogs") }}
+    {{ if not (and .IsNode (eq .Type "blogs") (lt (len $posts) .Site.Params.paginate)) }}
     <!-- Recent blog posts -->
-    {{- partial "sections/footer/recentBlogPosts.html" . -}}
+        {{- partial "sections/footer/recentBlogPosts.html" . -}}
+    {{ end }}
 
     <!-- Social Icons -->
     {{- partial "sections/footer/socialNetwork.html" . -}}

@@ -17,6 +17,7 @@
   <div id="content">
     {{- block "main" . }}{{- end }}
   </div>
+
   {{- partial "sections/footer/index.html" . -}}
 
   {{- if (or (eq .Site.Params.UseBootstrapCDN true) (eq .Site.Params.UseBootstrapCDN "js")) -}}

@@ -33,7 +33,7 @@
 #single .page-content a::after {
     content: "";
     display: block;
-    width: 0px;
+    width: 0;
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
@@ -46,7 +46,7 @@
 }
 
 #single .page-content h1, #single .page-content h2, #single .page-content h3, #single .page-content h4, #single .page-content h5, #single .page-content h6 {
-    color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
     margin-bottom: 0.7em;
     opacity: 0.9;
 }
@@ -63,6 +63,7 @@
 
 #single .page-content blockquote, #single .page-content blockquote * {
     background-color: var(--secondary-color) !important;
+    opacity: 0.3;
 }
 
 /* table */
@@ -103,12 +104,11 @@
 /* code */
 
 #single .page-content pre {
-  border-radius: 0.7em !important;
-  margin: 5px;
-  margin-bottom: 2em;
-  padding: 2em;
-  background-color: var(--secondary-color) !important;
-  color: var(--text-secondary-color) !important;
+  border-radius: 0.3em 0.3em 0 0 !important;
+  margin: 5px 5px 2em 0;
+  padding: 0.9em;
+  background-color: var(--code-background-color) !important;
+  color: var(--code-text-color) !important;
   max-height: 450px;
 }
 
@@ -149,7 +149,7 @@
 /* sidebar */
 
 #single aside {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
     border-radius: .7rem;
     padding: .7rem 1rem;
     margin-bottom: 1em;
@@ -270,14 +270,14 @@
     border: none;
     outline: none;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--text-secondary-color);
     cursor: pointer;
     border-radius: 10px;
 }
 
 #single #topScroll:hover {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
     transition: .5s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
